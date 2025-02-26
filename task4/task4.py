@@ -2,7 +2,6 @@ import sys
 numFile = sys.argv[1]
 with open(numFile, "r") as f:
     nums = [int(line.rstrip("\n")) for line in f]
-print(nums)
 def quickselect_median(lst):
     if len(lst) % 2 == 1:
         return quickselect(lst, len(lst) // 2)
